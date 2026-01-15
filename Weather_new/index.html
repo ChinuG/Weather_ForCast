@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>🌦 Weather Forecast</h1>
+    <p class="subtitle">Search cities and view weather history</p>
+
+    <!-- Search -->
+    <div class="search-box">
+        <input type="text" id="cityInput" placeholder="Enter city name">
+        <button id="searchBtn">Get Weather</button>
+    </div>
+
+    <p id="errorMsg" class="error"></p>
+
+    <!-- SEARCHED CITIES CAROUSEL -->
+    <h2 class="section-title">Searched Cities</h2>
+
+    <div class="carousel-wrapper">
+        <button class="nav-btn" id="searchLeft">❮</button>
+        <div class="weather-cards" id="searchCards"></div>
+        <button class="nav-btn" id="searchRight">❯</button>
+    </div>
+
+    <!-- POPULAR CITIES CAROUSEL -->
+    <h2 class="section-title">Popular Cities in India</h2>
+
+    <div class="carousel-wrapper">
+        <button class="nav-btn" id="popularLeft">❮</button>
+        <div class="weather-cards" id="popularCards"></div>
+        <button class="nav-btn" id="popularRight">❯</button>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
